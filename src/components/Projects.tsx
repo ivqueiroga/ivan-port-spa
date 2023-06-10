@@ -5,7 +5,7 @@ type Props = {}
 
 function Projects({}: Props) {
   return (
-    <div>Projects</div>
+    <div className='projects-container' id='projects'>Projects</div>
   )
 }
 

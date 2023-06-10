@@ -6,6 +6,10 @@
   justify-content: space-between;
   align-items: space-between;
   align-content: center;
+  position: fixed;
+  top: 0;
+  background-color: var(--darkestBlue);
+  z-index: 1;
 }
 
 .menu {
