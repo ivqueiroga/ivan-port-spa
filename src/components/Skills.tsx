@@ -5,7 +5,12 @@ type Props = {}
 
 function Skills({}: Props) {
   return (
-    <div className='skills-container' id='skills'>Skills</div>
+    <div className='skills-container' id='skills'>
+      <h2>- Habilidades- </h2>
+      <div className='skills-zone'>
+        <div></div>
+      </div>
+    </div>
   )
 }
 

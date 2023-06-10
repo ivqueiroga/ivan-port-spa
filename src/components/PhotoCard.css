@@ -1,0 +1,15 @@
+.photo-left {
+  border: 1px groove var(--lightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.photo-right {
+  border: 1px groove var(--lightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
