@@ -15,7 +15,7 @@ const data = {
   'iconsInports': ['Di','Bi','Si'],
   'projects': [{
       'name': 'Lorem Ipsum',
-      'photoPath': '../../public/',
+      'photoPath': '../assets/images',
       'type': 'Game',
       'languages': 'C++',
       'status': 'WIP',

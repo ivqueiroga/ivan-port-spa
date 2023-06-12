@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import PhotoCard from './PhotoCard';
-import Perfil from '../assets/Foto_Perfil.jpg'
+import Perfil from '../assets/images/Foto_Perfil.jpg'
 
 type Props = {}
 

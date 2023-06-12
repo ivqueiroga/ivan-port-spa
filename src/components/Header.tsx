@@ -18,7 +18,7 @@ export default function Header({}: Props) {
       </div>
       <div className='main-btn-container'>
         <Button isLeft={true} link='contacts' content='Contato' highlight={true} thereIsDownload={false}/>
-        <Button isLeft={false} link={require('../assets/cv.pdf')} content='Currículo' highlight={false} thereIsDownload={true} icon={<BiDownload size={15}/>}/>
+        <Button isLeft={false} link={require('../assets/docs/cv.pdf')} content='Currículo' highlight={false} thereIsDownload={true} icon={<BiDownload size={15}/>}/>
       </div>
     </div>
   )

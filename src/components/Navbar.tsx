@@ -1,12 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-scroll';
 import './Navbar.css';
-import logo from '../assets/Logo.png';
+import logo from '../assets/images/Logo.png';
 import {VscThreeBars, VscClose} from 'react-icons/vsc';
-import { IWindowSize } from '../Interface/Interface';
-
-
-type Props = {}
 
 export default function Navbar() {
   const [navIcon, setNavIcon] = useState(false);
@@ -32,7 +28,6 @@ export default function Navbar() {
             <Link 
               to='main'
               spy={true}
-              activeClass="active"
               smooth={true}
               offset={-100}
               duration={500}
