@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-scroll';
 import './Navbar.css';
-import logo from '../assets/Logo.png'
+import logo from '../assets/Logo.png';
+import {VscThreeBars} from 'react-icons/vsc';
 
 type Props = {}
 

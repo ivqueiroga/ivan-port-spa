@@ -1,42 +1,53 @@
 .button-left {
   color: var(--darkestBlue);
   font-weight: bold;
+  font-size: large;
   text-shadow: 1px 1px 2px var(--darkestBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
   margin-left: 1%;
-  padding: 5px;
   display: flex;
-  width: 100px;
+  width: 150px;
   height: 40px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   background-color: var(--lightBlue);
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  transition: all 0.5s ease-in-out;
 }
 
 .button-right {
   color: var(--darkestBlue);
   font-weight: bold;
-  text-shadow: 1px 1px 2px var(--darkestBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
+  font-size: large;
+  text-shadow: 1px 1px 2px var(--darkerBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
   margin-right: 1%;
-  padding: 5px;
   display: flex;
-  width: 100px;
+  width: 150px;
   height: 40px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   background-color: var(--lightBlue);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+a, a:visited, a:hover{
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .button-right:hover, .button-left:hover {
   justify-content: center;
   background-color: var(--darkerBlue);
+  font-size: larger;
+  width: 160px;
+  height: 50px;
   align-items: center;
   color: white;
   text-shadow: 1px 1px 10px var(--lightBlue), 0 0 1em var(--lighterBlue), 0 0 1em var(--lighterBlue);
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .highlight {

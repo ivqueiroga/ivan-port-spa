@@ -6,3 +6,65 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+.form-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container>button {
+  border: none;
+  margin-top: 5%;
+  color: var(--darkestBlue);
+  font-weight: bold;
+  font-size: large;
+  text-shadow: 1px 1px 2px var(--darkestBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightBlue);
+  transition: all 0.5s ease-in-out;
+}
+
+.form-container>button:hover {
+  border: none;
+  justify-content: center;
+  background-color: var(--darkerBlue);
+  font-size: larger;
+  width: 160px;
+  height: 50px;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 10px var(--lightBlue), 0 0 1em var(--lighterBlue), 0 0 1em var(--lighterBlue);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.input-areas {
+  width: 100%;
+}
+
+.input-areas>label {
+  text-align: left;
+}
+
+.input-areas>textarea {
+  width: 100%;
+  min-width: 200px;
+  resize: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
