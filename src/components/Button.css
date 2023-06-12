@@ -1,8 +1,8 @@
 .button-left {
   color: var(--darkestBlue);
-  font-weight: bold;
+  font-weight: 900;
   font-size: large;
-  text-shadow: 1px 1px 2px var(--darkestBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
+  text-shadow: 1px 1px 2px var(--lighterBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
   margin-left: 1%;
   display: flex;
   width: 150px;
@@ -17,9 +17,9 @@
 
 .button-right {
   color: var(--darkestBlue);
-  font-weight: bold;
+  font-weight: 900;
   font-size: large;
-  text-shadow: 1px 1px 2px var(--darkerBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
+  text-shadow: 1px 1px 2px var(--lighterBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
   margin-right: 1%;
   display: flex;
   width: 150px;

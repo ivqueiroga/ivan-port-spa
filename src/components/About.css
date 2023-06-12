@@ -14,3 +14,24 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.right>p {
+  padding-right: 2%;
+}
+
+.left>p {
+  padding-left: 2%;
+}
+
+
+
+@media only screen and (max-width: 769px) {
+  .about-container>div {
+    width: 80%;
+  }
+
+  .left>p, .right>p {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}

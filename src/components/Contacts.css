@@ -20,7 +20,7 @@
   color: var(--darkestBlue);
   font-weight: bold;
   font-size: large;
-  text-shadow: 1px 1px 2px var(--darkestBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
+  text-shadow: 1px 1px 2px var(--lighterBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
   width: 150px;
   height: 40px;
   cursor: pointer;
@@ -62,9 +62,36 @@
 
 .input-areas>textarea {
   width: 100%;
-  min-width: 200px;
+  min-width: 60%;
+  min-height: 20px;
   resize: none;
   display: flex;
-  justify-content: flex-end;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5%;
+  width: 40%;
+}
+
+.social-container>label {
+  width: 100%;
+  margin-top: 1%;
+}
+
+.social-icon {
+  vertical-align: middle;
+  margin-right: 1%;
+}
+
+@media only screen and (max-width: 769px) {
+  .form-container {
+    width: 80%;
+  }
+  .social-container {
+    width: 80%;
+  }
 }
 

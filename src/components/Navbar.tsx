@@ -1,17 +1,25 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-scroll';
 import './Navbar.css';
 import logo from '../assets/Logo.png';
-import {VscThreeBars} from 'react-icons/vsc';
+import {VscThreeBars, VscClose} from 'react-icons/vsc';
+import { IWindowSize } from '../Interface/Interface';
+
 
 type Props = {}
 
-const pageReloader = () => {
-  const reset =  window.location.reload();
-  return reset;
-}
+export default function Navbar() {
+  const [navIcon, setNavIcon] = useState(false);
 
-export default function Navbar({}: Props) {
+  const navHandler = () => {
+    setNavIcon(!navIcon);
+  }
+
+  const pageReloader = () => {
+    const reset =  window.location.reload();
+    return reset;
+  }
+
   return (
       <nav className='nav-container'>
         <button 
@@ -19,18 +27,14 @@ export default function Navbar({}: Props) {
           className='logo'>
           <img src={logo} alt='logo' width={40} />
         </button>
-        <input className='menu-btn' type='checkbox' id='menu-btn' />
-        <label className='menu-icon' htmlFor='menu-btn'>
-          <span className='nav-icon'></span>
-        </label>
-        <ul className='menu'>
+        <ul className={navIcon ? 'menu-active' : 'menu'}>
           <li>
             <Link 
               to='main'
               spy={true}
               activeClass="active"
               smooth={true}
-              offset={-200}
+              offset={-100}
               duration={500}
             >
               Home
@@ -42,7 +46,7 @@ export default function Navbar({}: Props) {
               spy={true}
               activeClass="active"
               smooth={true}
-              offset={-200}
+              offset={-100}
               duration={500}
             >
               Sobre Mim
@@ -54,7 +58,7 @@ export default function Navbar({}: Props) {
               spy={true}
               activeClass="active"
               smooth={true}
-              offset={-200}
+              offset={-100}
               duration={500}
             >
               Habilidades
@@ -66,7 +70,7 @@ export default function Navbar({}: Props) {
               spy={true}
               activeClass="active"
               smooth={true}
-              offset={-200}
+              offset={-100}
               duration={500}
             >
               Projetos
@@ -78,13 +82,17 @@ export default function Navbar({}: Props) {
               spy={true}
               activeClass="active"
               smooth={true}
-              offset={-200}
+              offset={-100}
               duration={500}
             >
               Contato
             </Link>
           </li>
         </ul>
+        <input className='menu-btn' type='checkbox' id='menu-btn'/>
+        <label className='menu-icon' htmlFor='menu-btn'>
+          <span onClick={navHandler} className='nav-icon'>{navIcon ? <VscClose size={30}/>: <VscThreeBars size={30} />}</span>
+        </label>
       </nav>
   )
 }

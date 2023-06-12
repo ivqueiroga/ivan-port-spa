@@ -13,3 +13,10 @@
   align-items: center;
   align-content: center;
 }
+
+@media only screen and (max-width: 769px) {
+  .photo-left, .photo-right {
+    border: none;
+    display: none;
+  }
+}

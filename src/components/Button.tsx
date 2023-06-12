@@ -12,7 +12,6 @@ type Props = {
 };
 
 export default function Button({content, highlight, isLeft, link, thereIsDownload, icon}: Props) {
-  console.log(icon);
   return (
     <div className={ isLeft? `button-left ${highlight ? 'highlight' : ''}` : `button-right ${highlight ? 'highlight' : ''}` }>
       {thereIsDownload 
