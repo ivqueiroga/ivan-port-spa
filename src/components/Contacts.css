@@ -34,9 +34,6 @@
   border: none;
   justify-content: center;
   background-color: var(--darkerBlue);
-  font-size: larger;
-  width: 160px;
-  height: 50px;
   align-items: center;
   color: white;
   text-shadow: 1px 1px 10px var(--lightBlue), 0 0 1em var(--lighterBlue), 0 0 1em var(--lighterBlue);
@@ -63,9 +60,13 @@
 .input-areas>textarea {
   width: 100%;
   min-width: 60%;
-  min-height: 20px;
+  min-height: 30px;
   resize: none;
   display: flex;
+}
+
+label>message {
+  min-height: 200px;
 }
 
 .social-container {
@@ -73,12 +74,17 @@
   flex-direction: column;
   text-align: center;
   padding-top: 5%;
-  width: 40%;
+  width: 30%;
+  position: relative;
+  top: 5%;
+  transform: translate(25%);
+  overflow: hidden;
 }
 
 .social-container>label {
   width: 100%;
-  margin-top: 1%;
+  margin-top: 5%;
+  text-align: left;
 }
 
 .social-icon {
@@ -91,7 +97,8 @@
     width: 80%;
   }
   .social-container {
-    width: 80%;
+    width: 70%;
+    transform: translate(10%);
   }
 }
 

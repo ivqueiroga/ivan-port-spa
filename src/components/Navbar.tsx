@@ -36,6 +36,7 @@ export default function Navbar() {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={() => setNavIcon(false)}
             >
               Home
             </Link>
@@ -48,6 +49,7 @@ export default function Navbar() {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={() => setNavIcon(false)}
             >
               Sobre Mim
             </Link>
@@ -60,6 +62,7 @@ export default function Navbar() {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={() => setNavIcon(false)}
             >
               Habilidades
             </Link>
@@ -72,6 +75,7 @@ export default function Navbar() {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={() => setNavIcon(false)}
             >
               Projetos
             </Link>
@@ -84,6 +88,7 @@ export default function Navbar() {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={() => setNavIcon(false)}
             >
               Contato
             </Link>

@@ -19,6 +19,8 @@ const links ={
   linkedin: 'https://www.linkedin.com/in/ivanqueirogap/',
 }
 
+const ICONSIZE = 20;
+
 function Contacts() {
   const form = useRef<HTMLFormElement | null>(null);
 
@@ -77,7 +79,7 @@ function Contacts() {
               cols={40}
             />
           </label>
-          <label className='input-areas'>
+          <label className='input-areas message'>
             Mensagem:
             <textarea
               name="message"
@@ -92,23 +94,23 @@ function Contacts() {
     </form>
     <div className='social-container'>
       <label>
-        <a href={links.github}>
-          <DiGithubBadge className='social-icon' />
+        <a href={links.github} target='_blank' rel='noreferrer'>
+          <DiGithubBadge className='social-icon' size={ICONSIZE}/>
           /ivqueiroga
         </a>
       </label>
       <label>
-        <a href={links.linkedin}>
-          <FaLinkedin className='social-icon' />
+        <a href={links.linkedin} target='_blank' rel='noreferrer'>
+        <FaLinkedin className='social-icon' size={ICONSIZE}/>
           /in/ivanqueirogap/
         </a>
       </label>
       <label>
-        <FaWhatsapp className='social-icon' />
+        <FaWhatsapp className='social-icon' size={ICONSIZE}/>
         {links.phone}
       </label>
       <label>
-        <MdEmail className='social-icon' />
+        <MdEmail className='social-icon' size={ICONSIZE}/>
         {links.email}
       </label>
     </div>
