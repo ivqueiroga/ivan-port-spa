@@ -25,14 +25,14 @@ function Contacts() {
   const form = useRef<HTMLFormElement | null>(null);
 
   const [contact, setContacts] = useState<IContact>({
-    from_name: 'email@email.com',
-    subject: 'Contato via página <Ivan Portfolio SPA>',
+    from_name: '',
+    subject: 'Contato via página de Portfolio SPA',
     message: 'Olá Ivan, \nGostaria de entrar em contato para que possamos conversar sobre o que vi em seu portfólio',
   });
 
   const handleSubmit = (e: any) => {
   e.preventDefault();
-    emailjs.sendForm(EMAILID.YOUR_SERVICE_ID, EMAILID.YOUR_TEMPLATE_ID, form.current!, EMAILID.YOUR_PUBLIC_KEY)
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current!, process.env.REACT_APP_USER_ID)
       .then((result) => {
         alert(ALERT.SENDIT);
     }, (error) => {
@@ -62,6 +62,7 @@ function Contacts() {
           <label className='input-areas'>
               Email:
               <textarea
+                placeholder='Digite aqui seu Email'
                 name="from_name"
                 defaultValue={contact.from_name}
                 onChange={handleChange}

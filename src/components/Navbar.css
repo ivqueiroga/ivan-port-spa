@@ -79,10 +79,10 @@ input {
     right: 0px;
     width: 150px;
     height: 30vh;
-    background-color: var(--darkerBlue);
+    background-color: var(--darkerBlueOpaque);
     padding: 10px 0 0 20px;
     transition: all 0.5s ease-in-out;
-    box-shadow: -5px 5px 5px var(--black);
+    box-shadow: -5px 5px 20px 1px var(--lightBlue);
   }
 
   .menu {

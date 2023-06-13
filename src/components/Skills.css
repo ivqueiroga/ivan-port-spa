@@ -1,14 +1,92 @@
 .skills-container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display:flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.skills-zone {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: center;
+}
+
+.icons-zone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto !important;
+  width: 50%;
+  margin-top: 2%;
+  margin-right: 5%;
+}
+
+.icon {
+  margin: 5px;
+  padding: 2px;
+  border: 1px double var(--lightBlue);
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: var(--lightBlue);
+  color: var(--darkestBlue);
+  box-shadow: 0px 0px 5px 5px var(--lightBlue);
+}
+
+.active-icon {
+  background-color: var(--lightBlue);
+  color: var(--darkestBlue);
+  box-shadow: 0px 0px 10px 5px var(--lightBlue);
+}
+
+.icon>p {
+  margin: 0;
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+.text-zone {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 5%;
   justify-content: flex-start;
   align-items: center;
 }
 
 @media only screen and (max-width: 769px) {
-  .form-container {
-    width: 80%;
+  .skills-zone {
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content:space-around;
+    align-items: center;
+  }
+  .text-zone {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+    width: 90%;
+  }
+
+  .icons-zone {
+    height: auto !important;
+    width: 100%;
+    padding: 2%;
+    margin-right: 0%;
   }
 }
