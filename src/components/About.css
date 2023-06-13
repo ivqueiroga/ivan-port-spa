@@ -27,7 +27,7 @@
 
 @media only screen and (max-width: 769px) {
   .about-container>div {
-    width: 80%;
+    width: 90%;
   }
 
   .left>p, .right>p {

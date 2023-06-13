@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { IContact } from '../Interface/Interface';
 import './Contacts.css';
-import { EMAILID } from '../secrets/secret';
 import emailjs from '@emailjs/browser';
 import {DiGithubBadge} from 'react-icons/di';
 import {MdEmail} from 'react-icons/md';
@@ -32,7 +31,7 @@ function Contacts() {
 
   const handleSubmit = (e: any) => {
   e.preventDefault();
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current!, process.env.REACT_APP_USER_ID)
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID || '', process.env.REACT_APP_TEMPLATE_ID || '', form.current!, process.env.REACT_APP_USER_ID)
       .then((result) => {
         alert(ALERT.SENDIT);
     }, (error) => {
