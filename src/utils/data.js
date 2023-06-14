@@ -1,5 +1,9 @@
 import {DiJavascript, DiCss3, DiHtml5, DiReact, DiGit, DiGithubBadge, DiLinux} from 'react-icons/di';
 import {SiAdobephotoshop, SiAdobepremierepro, SiBlender, SiRedux} from 'react-icons/si'
+import img1 from '../assets/images/projects/portfolio-spa.png';
+import img2 from '../assets/images/projects/Pokedex_vue.png';
+import img3 from '../assets/images/projects/JumpMan.gif';
+import img4 from '../assets/images/projects/Pixel-Frame.png';
 
 const data = {
   icons :[
@@ -17,13 +21,44 @@ const data = {
   ],
   iconsInports: ['Di','Si'],
   projects: [{
-      'name': 'Lorem Ipsum',
-      'photoPath': '../assets/images',
-      'type': 'Game',
-      'languages': 'C++',
-      'status': 'WIP',
+      name: 'Portfólio SPA',
+      photoPath: img1,
+      description: 'Portfolio criado em React modelo de página única com conteúdo responsivo ',
+      genre: ['Webpage',],
+      languages: ['React (TypeScript)',],
+      status: 'OK',
+      link: {github: 'https://github.com/ivqueiroga/ivan-port-spa', webpage: 'https://ivan-portfolio-spa.vercel.app/'}
+    },
+    {
+      name: 'Pokedex Vue',
+      photoPath: img2,
+      description: 'Projeto de uma Pokedex feito no framework Vue.js',
+      genre: ['App',],
+      languages: ['Vue',],
+      status: 'KO - SERÁ REFEITO',
+      link: {github: 'https://github.com/ivqueiroga/Pokedex', webpage: 'https://pokedex-phi-coral.vercel.app/'}
+    },
+    {
+      name: 'Jump Man',
+      photoPath: img3,
+      description: 'Jogo feito em C++ utilizando o Platform.IO, plataforma colaborativa para projetos em microcontroladores ',
+      genre: ['Game',],
+      languages: ['C++',],
+      status: 'WIP, ON HOLD',
+      link: {github: 'https://github.com/ivqueiroga/JumpMan', webpage: ''}
+    },
+    {
+      name: 'Pixel Frame',
+      photoPath: img4,
+      description: 'Aplicativo feito em React Native para utilização e definição de parâmetros de luminária led a ser desenvolvida em um ESP32',
+      genre: ['App',],
+      languages: ['React Native (JS)',],
+      status: 'WIP, ON HOLD',
+      link: {github: 'https://github.com/ivqueiroga/PixelFrame-React-Native', webpage: ''}
     },
   ]
 }
+
+// G:\Ivan\Projetos\ivan-port-spa\src\assets\images\Foto_Perfil.jpg
 
 export default data;

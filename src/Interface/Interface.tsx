@@ -18,3 +18,13 @@ export interface ISkill {
   active: boolean;
   text: string;
 }
+
+export interface IProject {
+  name: string,
+  photoPath?: any,
+  description: string,
+  genre: string[],
+  languages: string[],
+  status: string,
+  link: {github: '', webpage: ''}
+}

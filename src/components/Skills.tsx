@@ -23,7 +23,7 @@ function Skills() {
       if (skill.name !== e) {
         return skill.active = false;
       } else {
-        skill.active = !skill.active;
+        skill.active = true;
         return (setActiveSkill({
           name: skill.name,
           active: skill.active,
