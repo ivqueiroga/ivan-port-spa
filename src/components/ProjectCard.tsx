@@ -25,13 +25,13 @@ function ProjectCard({project}: Props) {
             <p className='pLanguages'>{languages}</p>
           </div>
         </div>
-        <div className='status-container'>
+        {/* <div className='status-container'>
           <p>{status}</p>
-        </div>
+        </div> */}
       </div>
       <div className='project-link-container'>
         <a href={link.github} target='_blank' rel='noreferrer' className='gitHub'>GitHub <DiGithubBadge /></a>
-        <a href={link.webpage} target='_blank' rel='noreferrer' className='webPage'>Webpage <TbWorldWww /></a>
+        {link.webpage  && <a href={link.webpage} target='_blank' rel='noreferrer' className='webPage'>Webpage <TbWorldWww /></a>}
       </div>
     </div>
   )

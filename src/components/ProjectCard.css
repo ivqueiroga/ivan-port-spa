@@ -1,5 +1,5 @@
 .ProjectCard {
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   gap: 1%;
 }
@@ -35,7 +35,6 @@
 
 .pTitle-container>p {
   margin: 0%;
-  background-color: var(--darkestBlue);
   width: 100%;
   color: white;
   display: flex;
@@ -105,22 +104,27 @@
   padding-bottom: 2%;
   writing-mode: vertical-lr;
   text-orientation:upright;
+  align-items: center;
   background-color: var(--black);
-
+  width: 30px;
 }
 
 .webPage {
+  margin-left: 5%;
+  width: 30px;
   display: flex;
   justify-content: space-between;
   padding-top: 2%;
   padding-bottom: 2%;
   writing-mode: vertical-lr;
   text-orientation:upright;
+  align-items: center;
   background-color: var(--darkerBlue);
 }
 
 @media only screen and (max-width: 769px) {
   .ProjectCard {
+    margin-top: 20%;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -131,11 +135,21 @@
   }
 
   .pCard-container>img {
-    max-width: none;
-    max-height: none;
-    width: 45%;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    width: 60%;
     height: auto;
     object-fit: cover;
+  }
+
+  .pContent-container {
+    width: 40%;
+    margin-left: 2%;
+  }
+
+  .pTitle-container {
+    width: 60%;
   }
 
   .project-link-container{
@@ -145,16 +159,26 @@
   }
 
   .gitHub {
-    height: 20px;
+    width: auto;
+    height: 30px;
     padding: 0 2% 0 2%;
     writing-mode: horizontal-tb;
     text-orientation: sideways;
+    align-items: center;
   }
 
   .webPage {
-    height: 20px;
+    margin-left: 0%;
+    width: auto;
+    height: 30px;
     padding: 0 2% 0 2%;
     writing-mode: horizontal-tb;
     text-orientation: sideways;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .pLanguages {
+    font-size: small;
   }
 }

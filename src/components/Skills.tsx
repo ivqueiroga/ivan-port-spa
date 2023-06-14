@@ -61,7 +61,7 @@ function Skills() {
         </div>
         <div className='text-zone'>
           <h3 className='text-title'>{renderText()? renderText()?.name : ''}</h3>
-          <p className='text'>{renderText()? renderText()?.text : 'Clique em uma Habilidade para ter um resumo de uma frase'}</p>
+          <p className='text'>{renderText()? renderText()?.text : ''}</p>
         </div>
       </div>
     </div>

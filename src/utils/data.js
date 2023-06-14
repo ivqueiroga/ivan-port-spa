@@ -23,7 +23,7 @@ const data = {
   projects: [{
       name: 'Portfólio SPA',
       photoPath: img1,
-      description: 'Portfolio criado em React modelo de página única com conteúdo responsivo ',
+      description: 'Portfolio SIngle Page Application criado em React com conteúdo responsivo ',
       genre: ['Webpage',],
       languages: ['React (TypeScript)',],
       status: 'OK',
@@ -32,7 +32,7 @@ const data = {
     {
       name: 'Pokedex Vue',
       photoPath: img2,
-      description: 'Projeto de uma Pokedex feito no framework Vue.js',
+      description: 'Aplicação Pokedex feito no framework Vue.js',
       genre: ['App',],
       languages: ['Vue',],
       status: 'KO - SERÁ REFEITO',
