@@ -14,7 +14,7 @@ export default function Header({}: Props) {
         <h3 className='main-content'>Olá, me chamo</h3>
         <h1 className='main-content'>Ivan Queiroga</h1>
         <h2 className='main-content'>Sou Engenheiro de Software e Engenheiro Mecânico</h2>
-        <p className='main-content'>Desenvolvedor web que utiliza JavaScript com bibliotecas React e Redux/Redux RTK. Familiarizado com TypeScript, bancos de dados relacionais e Métodos Ágeis.</p>
+        <p className='main-content'>Desenvolvedor web que utiliza JavaScript e bibliotecas React e Redux/Redux RTK. Familiarizado com TypeScript, bancos de dados relacionais e Métodos Ágeis.</p>
       </div>
       <div className='main-btn-container'>
         <Button isLeft={true} link='contacts' content='Contato' highlight={true} thereIsDownload={false}/>
