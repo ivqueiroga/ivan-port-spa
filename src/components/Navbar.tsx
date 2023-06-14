@@ -91,7 +91,7 @@ export default function Navbar() {
         </ul>
         <input className='menu-btn' type='checkbox' id='menu-btn'/>
         <label className='menu-icon' htmlFor='menu-btn'>
-          <span onClick={navHandler} className='nav-icon'>{navIcon ? <VscClose size={30}/>: <VscThreeBars size={30} />}</span>
+          <span onClick={navHandler} className='nav-icon'>{navIcon ? <VscClose size={40}/>: <VscThreeBars size={40} />}</span>
         </label>
       </nav>
   )

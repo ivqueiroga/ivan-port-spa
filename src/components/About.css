@@ -10,7 +10,7 @@
 .about-container>div {
   display: flex;
   flex-direction: row;
-  width: 40%;
+  width: 60%;
   justify-content: space-between;
   align-items: center;
 }

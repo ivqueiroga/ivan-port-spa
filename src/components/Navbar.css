@@ -27,8 +27,13 @@
 
 .logo {
   background-color: transparent;
-  margin-left: 1%;
+  margin-top: 1%;
+  margin-left: 3%;
   cursor: pointer;
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  padding: 0;
 }
 
 li {
@@ -64,7 +69,10 @@ input {
 }
 
 .menu-icon {
-  margin: 2%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: 5%;
 }
 
 @media only screen and (max-width: 769px) {
@@ -75,7 +83,7 @@ input {
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 40px;
+    top: 60px;
     right: 0px;
     width: 150px;
     height: 30vh;
@@ -95,5 +103,8 @@ input {
     align-items: center;
     align-content: center;
     transition: all 0.5s ease-in-out;
+  }
+  .logo {
+    margin: 5%;
   }
 }

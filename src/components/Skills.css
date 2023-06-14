@@ -11,7 +11,7 @@
 .skills-zone {
   display: flex;
   flex-direction: row;
-  width: 40%;
+  width: 60%;
   justify-content: center;
 }
 
