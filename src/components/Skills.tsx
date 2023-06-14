@@ -22,7 +22,7 @@ function Skills() {
     skillSet.map((skill) => { 
       if (skill.name !== e) {
         return skill.active = false;
-      } else return skill.active = true;
+      } else return skill.active = !skill.active;
     });
     setActiveSkill(active[0]);
   }
