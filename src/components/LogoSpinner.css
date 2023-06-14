@@ -1,0 +1,14 @@
+.iconBox {
+  display: flex;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  color: inherit;
+}
+
+.iconBox-Text {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}

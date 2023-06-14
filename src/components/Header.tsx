@@ -4,9 +4,7 @@ import './Header.css';
 import Button from './Button';
 import { BiDownload } from 'react-icons/bi';
 
-type Props = {}
-
-export default function Header({}: Props) {
+export default function Header() {
   return (
     <div className='header-container' id='main'>
       <Navbar />

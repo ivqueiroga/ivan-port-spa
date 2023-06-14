@@ -23,6 +23,16 @@
   padding-left: 2%;
 }
 
+.logos-cont {
+  min-width: 100px;
+  height: 100px;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 
 
 @media only screen and (max-width: 769px) {

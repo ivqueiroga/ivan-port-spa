@@ -1,9 +1,7 @@
 import React from 'react';
 import './Projects.css';
 
-type Props = {}
-
-function Projects({}: Props) {
+function Projects() {
   return (
     <div className='projects-container' id='projects'>
       <h2>- Projetos -</h2>

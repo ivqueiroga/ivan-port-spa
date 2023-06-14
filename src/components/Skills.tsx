@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Skills.css';
 import rawData from '../utils/data';
+import { ISkill } from '../Interface/Interface';
 
 function Skills() {
   const { icons } = rawData;
@@ -15,16 +16,21 @@ function Skills() {
     const arr: any = []
     icons?.map((prevState) => arr.push(({...prevState, active: false})));
     setSkillSet(arr);
-  },[icons])
+  },[icons]);
 
   const skillHandler = (e: string) => {
-    const active = skillSet.filter((skill) => skill.name === e);
-    skillSet.map((skill) => { 
+      return skillSet.map((skill) => { 
       if (skill.name !== e) {
         return skill.active = false;
-      } else return skill.active = true;
+      } else {
+        skill.active = !skill.active;
+        return (setActiveSkill({
+          name: skill.name,
+          active: skill.active,
+          text: skill.text,
+        }));
+      };
     });
-    setActiveSkill(active[0]);
   }
 
   const renderIcon = (e:any) => {
@@ -36,6 +42,14 @@ function Skills() {
         <input type="checkbox" name={e.name} checked={e.active} readOnly />
       </button>
     );}
+
+  const renderText  = ():ISkill | undefined => {
+    const skill = skillSet.filter((skill) => skill.active === true);
+    if (skill.length > 0) {
+      const {active, name, text} = skill[0]
+      return {active, name, text};
+    } else return undefined;
+  }
   
   
   return (
@@ -46,8 +60,8 @@ function Skills() {
           {skillSet?.map((e) => renderIcon(e))}
         </div>
         <div className='text-zone'>
-          <h3 className='text-title'>{activeSkill.name.length > 0 ? activeSkill.name : ''}</h3>
-          <p className='text'>{activeSkill.name.length > 0 ? activeSkill.text : 'Clique em uma Habilidade para ter um resumo de uma frase'}</p>
+          <h3 className='text-title'>{renderText()? renderText()?.name : ''}</h3>
+          <p className='text'>{renderText()? renderText()?.text : 'Clique em uma Habilidade para ter um resumo de uma frase'}</p>
         </div>
       </div>
     </div>

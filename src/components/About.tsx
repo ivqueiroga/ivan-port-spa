@@ -2,10 +2,9 @@ import React from 'react';
 import './About.css';
 import PhotoCard from './PhotoCard';
 import Perfil from '../assets/images/Foto_Perfil.jpg'
+import LogoSpinner from './LogoSpinner';
 
-type Props = {}
-
-function About({}: Props) {
+function About() {
   return (
     <div className='about-container' id='about'>
       <h2>- Sobre Mim -</h2>
@@ -14,7 +13,9 @@ function About({}: Props) {
         <PhotoCard content='Foto Perfil' isLeft={false} link={Perfil}/>
       </div>
       <div className='p-container left'>
-        <PhotoCard content='Logos girando' isLeft={false} link={'Logos girando'}/>
+        <div className='logos-cont'>
+          <LogoSpinner />
+        </div>
         <p className='p2-text'>Como desenvolvedor web crio UI`s fluidas com a biblioteca React, atreladas ao Redux para gerenciamento global de estado.Páginas responsivas, Single Page Application, Mobile First, Metodologias Ágeis estão dentro da minha zona de conforto.</p>
       </div>
       <div className='p-container right'>

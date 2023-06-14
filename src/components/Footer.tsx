@@ -1,9 +1,7 @@
 import React from 'react';
 import './Footer.css';
 
-type Props = {}
-
-function Footer({}: Props) {
+function Footer() {
   return (
     <div className='footer-container'>
       <p>Ivan Queiroga</p>
