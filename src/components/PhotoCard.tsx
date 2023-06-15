@@ -10,7 +10,7 @@ type Props = {
 function PhotoCard({content, isLeft, link}: Props) {
   return (
     <div className={ isLeft? 'photo-left' : 'photo-right'} >
-      <img src={link} width='150px' alt={content}/>
+      <img src={link} width='150px' alt={content} style={{borderRadius: '5%'}}/>
     </div>
   )
 }

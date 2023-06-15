@@ -6,7 +6,7 @@ function Footer() {
     <div className='footer-container'>
       <p>Ivan Queiroga</p>
       <p>Todos os direitos reservados</p>
-      <p>React & React Redux RTK</p>
+      <p>Criado com React & React Redux RTK</p>
     </div>
   )
 }

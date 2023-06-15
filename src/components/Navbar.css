@@ -10,6 +10,7 @@
   top: 0;
   backdrop-filter: blur(10px);
   z-index: 1;
+  box-shadow: 2px 2px 5px 1px var(--black);
 }
 
 .nav-container>button, .nav-container>button:focus {
@@ -82,7 +83,6 @@ input {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    text-align: end;
     position: fixed;
     top: 60px;
     right: 0px;

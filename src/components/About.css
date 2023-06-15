@@ -40,6 +40,15 @@
     width: 90%;
   }
 
+  .about-container>div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  /* .p1-container {
+    display: flex;
+    flex-direction: column;
+  } */
+
   .left>p, .right>p {
     padding-left: 0%;
     padding-right: 0%;

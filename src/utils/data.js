@@ -41,7 +41,7 @@ const data = {
     {
       name: 'Jump Man',
       photoPath: img3,
-      description: 'Jogo feito em C++ utilizando o Platform.IO, plataforma colaborativa para projetos em microcontroladores ',
+      description: 'Jogo feito em C++ utilizando o Platform.IO, plataforma colaborativa para projetos em microcontrolador',
       genre: ['Game',],
       languages: ['C++',],
       status: 'WIP, ON HOLD',

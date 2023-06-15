@@ -8,7 +8,7 @@ function About() {
   return (
     <div className='about-container' id='about'>
       <h2>- Sobre Mim -</h2>
-      <div className='p-container right'>
+      <div className='p1-container p-container right'>
         <p className='p1-text'>Formado em Engenharia Mecânica e sempre ligado em tecnologia, vi de perto a indústria automobilística, onde aprendi a lidar com novas soluções todos os dias para os mais variados obstáculos.</p>
         <PhotoCard content='Foto Perfil' isLeft={false} link={Perfil}/>
       </div>

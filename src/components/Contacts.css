@@ -6,7 +6,9 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 10%;
-  margin-bottom: 10%;
+  padding-bottom: 5%;
+  background-color: var(--darkestBlue2);
+  box-shadow: 2px 2px 5px 1px var(--black);
 }
 
 .form-container {

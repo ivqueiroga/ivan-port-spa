@@ -29,7 +29,7 @@
   margin: 5px;
   padding: 2px;
   border: 1px double var(--lightBlue);
-  border-radius: 20%;
+  border-radius: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +51,7 @@
   background-color: var(--lightBlue);
   color: var(--darkestBlue);
   box-shadow: 0px 0px 10px 5px var(--lightBlue);
+  animation: blinking 2s ease-in-out infinite;
 }
 
 .icon>p {
@@ -88,5 +89,35 @@
     width: 100%;
     padding: 2%;
     margin-right: 0%;
+  }
+}
+
+@keyframes blinking {
+  0%{
+    opacity: 0;
+  }
+
+  10%{
+    opacity: 1;
+  }
+
+  20%{
+    opacity: .5;
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  80%{
+    opacity: 1;
+  }
+
+  90%{
+    opacity: .9;
+  }
+
+  100%{
+    opacity: 1;
   }
 }

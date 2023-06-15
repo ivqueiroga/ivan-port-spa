@@ -1,6 +1,4 @@
 .photo-left {
-  padding: 1%;
-  /* border: 1px groove var(--lightBlue); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,8 +6,7 @@
 }
 
 .photo-right {
-  padding: 1%;
-  /* border: 1px groove var(--lightBlue); */
+  border-radius: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,5 +17,10 @@
   .photo-left, .photo-right {
     border: none;
     display: none;
+  }
+
+  .p1-container .photo-right {
+    display: flex;
+    flex-direction: column;
   }
 }

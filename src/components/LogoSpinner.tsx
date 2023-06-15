@@ -17,12 +17,12 @@ function LogoSpinner() {
   },[icons]);
 
   useEffect(() => {
-    const spinNumber = Math.floor(360/skillSet.length)
-    const RESTO = Math.floor(360%skillSet.length);
-    const maxSpin = Math.floor(RESTO + spinNumber * skillSet.length);
+    // const spinNumber = Math.floor(360/skillSet.length)
+    // const RESTO = Math.floor(360%skillSet.length);
+    // const maxSpin = Math.floor(RESTO + spinNumber * skillSet.length);
     const intervalId = setInterval(() => {
       setTimeLeft((t) => t + 1);
-      if(rotate >= maxSpin) {
+      if(rotate >= 360) {
         setRotate(prevState => {
           prevState = 0;
           return prevState + 1;
