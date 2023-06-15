@@ -26,5 +26,5 @@ export interface IProject {
   genre: string[],
   languages: string[],
   status: string,
-  link: {github: '', webpage: ''}
+  link: {github: string, webpage: string, youtube: string}
 }

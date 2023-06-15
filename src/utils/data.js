@@ -25,9 +25,9 @@ const data = {
       photoPath: img1,
       description: 'Portfolio SIngle Page Application criado em React com conteúdo responsivo ',
       genre: ['Webpage',],
-      languages: ['React (TypeScript)',],
+      languages: ['React','TS'],
       status: 'OK',
-      link: {github: 'https://github.com/ivqueiroga/ivan-port-spa', webpage: 'https://ivan-portfolio-spa.vercel.app/'}
+      link: {github: 'https://github.com/ivqueiroga/ivan-port-spa', webpage: 'https://ivan-portfolio-spa.vercel.app/', youtube: ''}
     },
     {
       name: 'Pokedex Vue',
@@ -36,7 +36,7 @@ const data = {
       genre: ['App',],
       languages: ['Vue',],
       status: 'KO - SERÁ REFEITO',
-      link: {github: 'https://github.com/ivqueiroga/Pokedex', webpage: 'https://pokedex-phi-coral.vercel.app/'}
+      link: {github: 'https://github.com/ivqueiroga/Pokedex', webpage: 'https://pokedex-phi-coral.vercel.app/', youtube: ''}
     },
     {
       name: 'Jump Man',
@@ -45,17 +45,18 @@ const data = {
       genre: ['Game',],
       languages: ['C++',],
       status: 'WIP, ON HOLD',
-      link: {github: 'https://github.com/ivqueiroga/JumpMan', webpage: ''}
+      link: {github: 'https://github.com/ivqueiroga/JumpMan', webpage: '', youtube: ''}
     },
     {
       name: 'Pixel Frame',
       photoPath: img4,
       description: 'Aplicativo feito em React Native para utilização e definição de parâmetros de luminária led a ser desenvolvida em um ESP32',
       genre: ['App',],
-      languages: ['React Native (JS)',],
+      languages: ['React Native', 'JS'],
       status: 'WIP, ON HOLD',
-      link: {github: 'https://github.com/ivqueiroga/PixelFrame-React-Native', webpage: ''}
+      link: {github: 'https://github.com/ivqueiroga/PixelFrame-React-Native', webpage: '', youtube: ''}
     },
+    
   ]
 }
 

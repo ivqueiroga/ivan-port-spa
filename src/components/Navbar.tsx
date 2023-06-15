@@ -24,7 +24,7 @@ export default function Navbar() {
           <img src={logo} alt='logo' width={40} />
         </button>
         <ul className={navIcon ? 'menu-active' : 'menu'}>
-          <li>
+          <li className='navbar-li'>
             <Link 
               to='main'
               spy={true}
@@ -36,7 +36,7 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <li>
+          <li className='navbar-li'>
             <Link 
               to='about'
               spy={true}
@@ -49,7 +49,7 @@ export default function Navbar() {
               Sobre Mim
             </Link>
           </li>
-          <li>
+          <li className='navbar-li'>
             <Link 
               to='skills'
               spy={true}
@@ -62,7 +62,7 @@ export default function Navbar() {
               Habilidades
             </Link>
           </li>
-          <li>
+          <li className='navbar-li'>
             <Link
               to='projects'
               spy={true}
@@ -75,7 +75,7 @@ export default function Navbar() {
               Projetos
             </Link>
           </li>
-          <li>
+          <li className='navbar-li'>
             <Link
               to='contacts'
               spy={true}

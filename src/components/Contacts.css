@@ -7,24 +7,27 @@
   align-items: center;
   margin-top: 10%;
   padding-bottom: 5%;
-  background-color: var(--darkestBlue2);
-  box-shadow: 2px 2px 5px 1px var(--black);
 }
 
 .form-container {
+  padding: 2%;
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
+  background-color: var(--darkestBlue2);
+  box-shadow: 2px 2px 5px 1px var(--black);
 }
 
 .form-container>button {
   border: none;
+  border-radius: 5px;
   margin-top: 5%;
   color: var(--darkestBlue);
   font-weight: bold;
   font-size: large;
-  text-shadow: 1px 1px 2px var(--lighterBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
+  text-shadow: 1px 1px 2px var(--lightBlue), 0 0 1em var(--lighterBlue), 0 0 0.2em var(--lighterBlue);
   width: 150px;
   height: 40px;
   cursor: pointer;
@@ -62,11 +65,13 @@
 }
 
 .input-areas>textarea {
+  border-radius: 5px;
   width: 100%;
   min-width: 60%;
   min-height: 30px;
   resize: none;
   display: flex;
+  box-sizing: border-box;
 }
 
 .message>textarea {
@@ -74,26 +79,34 @@
 }
 
 .social-container {
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 5%;
-  width: 30%;
-  position: relative;
-  top: 5%;
-  transform: translate(25%);
-  overflow: hidden;
+  width: 35%;
+  align-items: center;
+  
 }
 
-.social-container>label {
+.social-link-container {
+  transform: translateX(20%);
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-top: 5%;
-  text-align: left;
+}
+
+.social-link-container>label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  text-align: start;
+  align-content: center;
+  justify-content: center;
 }
 
 .social-icon {
   vertical-align: middle;
-  margin-right: 1%;
+  margin-right: 5%;
 }
 
 @media only screen and (max-width: 769px) {
@@ -102,7 +115,6 @@
   }
   .social-container {
     width: 70%;
-    transform: translate(10%);
   }
 }
 

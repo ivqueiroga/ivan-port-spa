@@ -12,7 +12,7 @@ import './Home.css';
 
 export default function Home() {
   const dispatch = useAppDispatch();
-  const [timeLeft, setTimeLeft] = useState(0)
+  const [timeLeft, setTimeLeft] = useState(0);
   const load = useAppSelector(state=>state.data.load);
 
   useEffect(() => {

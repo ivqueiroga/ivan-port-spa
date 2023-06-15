@@ -55,8 +55,8 @@ function Contacts() {
 
   return (
     <div className='contacts-container' id='contacts'>
-      <h2>- Contato -</h2>
       <form ref={form} method="post" onSubmit={handleSubmit} className='form-container'>
+        <h2>- Contato -</h2>
         <div className='input-container'>
           <label className='input-areas'>
               Email:
@@ -70,7 +70,7 @@ function Contacts() {
               />
           </label>
           <label className='input-areas'>
-            Assunto: <input name="subject" defaultValue="Subject" />
+            Assunto:
             <textarea
               name="subject"
               defaultValue={contact.subject}
@@ -93,26 +93,33 @@ function Contacts() {
         <button type="submit">Enviar Email</button>
     </form>
     <div className='social-container'>
-      <label>
-        <a href={links.github} target='_blank' rel='noreferrer'>
-          <DiGithubBadge className='social-icon' size={ICONSIZE}/>
-          /ivqueiroga
-        </a>
-      </label>
-      <label>
-        <a href={links.linkedin} target='_blank' rel='noreferrer'>
-        <FaLinkedin className='social-icon' size={ICONSIZE}/>
-          /in/ivanqueirogap/
-        </a>
-      </label>
-      <label>
-        <FaWhatsapp className='social-icon' size={ICONSIZE}/>
-        {links.phone}
-      </label>
-      <label>
-        <MdEmail className='social-icon' size={ICONSIZE}/>
-        {links.email}
-      </label>
+      <h3>Redes Sociais</h3>
+      <div className='social-link-container'>
+        <label>
+          <a href={links.github} target='_blank' rel='noreferrer'>
+            <DiGithubBadge className='social-icon' size={ICONSIZE}/>
+            /ivqueiroga
+          </a>
+        </label>
+        <label>
+          <a href={links.linkedin} target='_blank' rel='noreferrer'>
+          <FaLinkedin className='social-icon' size={ICONSIZE}/>
+            /in/ivanqueirogap/
+          </a>
+        </label>
+        <label>
+          <div>
+            <FaWhatsapp className='social-icon' size={ICONSIZE}/>
+            {links.phone}
+          </div>
+        </label>
+        <label>
+          <div>
+            <MdEmail className='social-icon' size={ICONSIZE}/>
+            {links.email}
+          </div>
+        </label>
+      </div>
     </div>
     </div>
   )

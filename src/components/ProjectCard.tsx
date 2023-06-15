@@ -1,16 +1,17 @@
 import React from 'react';
 import './ProjectCard.css';
-import rawData from '../utils/data';
 import {DiGithubBadge} from 'react-icons/di';
+import {FaYoutube} from 'react-icons/fa';
 import {TbWorldWww} from 'react-icons/tb';
 import { IProject } from '../Interface/Interface';
+const SIZE = 20;
 
 type Props = {
   project: IProject
 }
 
 function ProjectCard({project}: Props) {
-  const { name, photoPath, genre, languages, status, description, link   } = project;
+  const { name, photoPath, genre, languages, description, link   } = project;
   return (
     <div className='ProjectCard'>
       <div className='pCard-container' >
@@ -22,7 +23,7 @@ function ProjectCard({project}: Props) {
           </div>
           <div className='pContent-container'>
             <p className='pDescription' >{description}</p>
-            <p className='pLanguages'>{languages}</p>
+            <div className='pLanguages'>{languages.map(lang => <p key={lang}>{lang}</p>)}</div>
           </div>
         </div>
         {/* <div className='status-container'>
@@ -30,8 +31,9 @@ function ProjectCard({project}: Props) {
         </div> */}
       </div>
       <div className='project-link-container'>
-        <a href={link.github} target='_blank' rel='noreferrer' className='gitHub'>GitHub <DiGithubBadge /></a>
-        {link.webpage  && <a href={link.webpage} target='_blank' rel='noreferrer' className='webPage'>Webpage <TbWorldWww /></a>}
+        {link.github  && <a href={link.github} target='_blank' rel='noreferrer' className='gitHub'>GitHub <DiGithubBadge size={SIZE} /></a>}
+        {link.webpage  && <a href={link.webpage} target='_blank' rel='noreferrer' className='webPage'>Webpage <TbWorldWww size={SIZE}/></a>}
+        {link.youtube  && <a href={link.youtube} target='_blank' rel='noreferrer' className='youTube'>YouTube <FaYoutube size={SIZE}/></a>}
       </div>
     </div>
   )

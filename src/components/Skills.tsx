@@ -39,7 +39,7 @@ function Skills() {
       <button className={e.active ? 'icon active-icon' : 'icon'} key={e.name} onClick={() => skillHandler(e.name)} name={e.name}>
         <Icon size={30}/>
         <p>{e.name}</p>
-        <input type="checkbox" name={e.name} checked={e.active} readOnly />
+        <input type="checkbox" name={e.name} checked={e.active} readOnly style={{display: 'none'}} />
       </button>
     );}
 

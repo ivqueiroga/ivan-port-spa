@@ -20,7 +20,7 @@ function About() {
       </div>
       <div className='p-container right'>
         <p className='p3-text'>A todo momento alimento minha curiosidade por tecnologia, o que me coloca em constante evolução.</p>
-        <PhotoCard content='cérebro' isLeft={false} link={'cérebro'}/>
+        {/* <PhotoCard content='cérebro' isLeft={false} link={'cérebro'}/> */}
       </div>
     </div>
   )
