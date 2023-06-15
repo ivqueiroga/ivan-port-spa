@@ -73,7 +73,7 @@ input {
   width: 40px;
   height: 40px;
   display: flex;
-  margin: 5%;
+  margin: 2% 5% 2% 5%;
 }
 
 @media only screen and (max-width: 769px) {
@@ -82,15 +82,22 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    align-content: flex-end;
     position: fixed;
-    top: 60px;
+    top: 50px;
     right: 0px;
     width: 40%;
     height: auto;
+    text-align: right;
     background-color: var(--darkestBlue);
     padding: 0 5% 0 0;
     transition: all 0.5s ease-in-out;
+    box-shadow: -2px 2px 5px 1px var(--black);
+  }
+
+  li {
+    justify-content: flex-end;
   }
 
   .menu {
@@ -105,6 +112,6 @@ input {
     transition: all 0.5s ease-in-out;
   }
   .logo {
-    margin: 5%;
+    margin: 2% 5% 2% 5%;
   }
 }

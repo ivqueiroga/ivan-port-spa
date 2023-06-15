@@ -11,7 +11,7 @@ export default function Header() {
       <div className='main'>
         <h3 className='main-content'>Olá, me chamo</h3>
         <h1 className='main-content'>Ivan Queiroga</h1>
-        <h2 className='main-content'>Sou Engenheiro de Software e Engenheiro Mecânico</h2>
+        <h2 className='main-content'>Engenheiro de Software e Engenheiro Mecânico</h2>
         <p className='main-content'>Desenvolvedor web que utiliza JavaScript e bibliotecas React e Redux/Redux RTK. Familiarizado com TypeScript, bancos de dados relacionais e Métodos Ágeis.</p>
       </div>
       <div className='main-btn-container'>
