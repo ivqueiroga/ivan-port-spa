@@ -11,11 +11,18 @@ type Props = {
 }
 
 function ProjectCard({project}: Props) {
-  const { name, photoPath, genre, languages, description, link   } = project;
+  const { name, photoPath, genre, languages, description, link } = project;
+
+  const thumbHandler = () => {
+    if(photoPath.type === 'img') {
+      return <img className='thumb' src={photoPath.link} alt={name} />
+    } else return <video className='thumb' autoPlay loop muted src={photoPath.link}></video>
+  }
+
   return (
     <div className='ProjectCard'>
       <div className='pCard-container' >
-        <img src={photoPath} alt={name} />
+        {thumbHandler()}
         <div className='pInfo-container'>
           <div className='pTitle-container'>
             <h3>{name}</h3>

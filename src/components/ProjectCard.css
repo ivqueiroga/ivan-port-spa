@@ -2,7 +2,8 @@
   margin-top: 5%;
   display: flex;
   gap: 1%;
-  box-shadow: 2px 2px 10px 1px var(--lightBlue);
+  box-shadow: -2px 2px 10px 1px var(--lightBlue);
+  border-radius: 5px;
 }
 
 .pCard-container {
@@ -10,6 +11,7 @@
   aspect-ratio: 2.5/1;
   box-sizing: border-box;
   border: 1px solid var(--lighterBlue);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,7 +74,7 @@
   margin: 0  2%  0 2%;
 }
 
-.pCard-container>img {
+.thumb {
   opacity: 0.8;
   position: absolute;
   z-index: -1;
@@ -103,6 +105,7 @@
 }
 
 .gitHub {
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   padding-top: 2%;
@@ -115,6 +118,7 @@
 }
 
 .webPage {
+  border-radius: 5px;
   margin-left: 5%;
   width: 30px;
   display: flex;
@@ -128,6 +132,7 @@
 }
 
 .youTube {
+  border-radius: 5px;
   font-weight: bolder;
   margin-left: 5%;
   width: 30px;
@@ -153,7 +158,7 @@
     width: 100%;
   }
 
-  .pCard-container>img {
+  .thumb {
     overflow: hidden;
     max-width: 100%;
     max-height: 100%;

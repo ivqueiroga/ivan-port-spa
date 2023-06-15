@@ -2,7 +2,7 @@ import {DiJavascript, DiCss3, DiHtml5, DiReact, DiGit, DiGithubBadge, DiLinux} f
 import {SiAdobephotoshop, SiAdobepremierepro, SiBlender, SiRedux} from 'react-icons/si'
 import img1 from '../assets/images/projects/portfolio-spa.png';
 import img2 from '../assets/images/projects/Pokedex_vue.png';
-import img3 from '../assets/images/projects/JumpMan.gif';
+import img3 from '../assets/videos/JumpMan.webm';
 import img4 from '../assets/images/projects/Pixel-Frame.png';
 
 const data = {
@@ -22,7 +22,7 @@ const data = {
   iconsInports: ['Di','Si'],
   projects: [{
       name: 'Portfólio SPA',
-      photoPath: img1,
+      photoPath: {type: 'img', link: img1,},
       description: 'Portfolio SIngle Page Application criado em React com conteúdo responsivo ',
       genre: ['Webpage',],
       languages: ['React','TS'],
@@ -31,7 +31,7 @@ const data = {
     },
     {
       name: 'Pokedex Vue',
-      photoPath: img2,
+      photoPath: {type: 'img', link: img2,},
       description: 'Aplicação Pokedex feito no framework Vue.js',
       genre: ['App',],
       languages: ['Vue',],
@@ -40,7 +40,7 @@ const data = {
     },
     {
       name: 'Jump Man',
-      photoPath: img3,
+      photoPath: {type: 'video', link: img3,},
       description: 'Jogo feito em C++ utilizando o Platform.IO, plataforma colaborativa para projetos em microcontrolador',
       genre: ['Game',],
       languages: ['C++',],
@@ -49,7 +49,7 @@ const data = {
     },
     {
       name: 'Pixel Frame',
-      photoPath: img4,
+      photoPath: {type: 'img', link: img4,},
       description: 'Aplicativo feito em React Native para utilização e definição de parâmetros de luminária led a ser desenvolvida em um ESP32',
       genre: ['App',],
       languages: ['React Native', 'JS'],

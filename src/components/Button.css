@@ -11,8 +11,10 @@
   justify-content: center;
   align-items: center;
   background-color: var(--lightBlue);
+  box-sizing: border-box;
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
   transition: all 0.5s ease-in-out;
+  border-radius: 5px;
 }
 
 .button-right {
@@ -28,6 +30,8 @@
   justify-content: center;
   align-items: center;
   background-color: var(--lightBlue);
+  box-sizing: border-box;
+  border-radius: 5px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
   transition: all 0.5s ease-in-out;
 }

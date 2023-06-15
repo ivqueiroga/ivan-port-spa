@@ -4,9 +4,14 @@ import ProjectCard from './ProjectCard';
 import Pagination from './Pagination';
 import rawData from '../utils/data';
 import { IProject } from '../Interface/Interface';
+import Loader from './Loader';
+import { useAppSelector, useAppDispatch } from '../redux/hooks/hooks';
+import { setLoading } from '../redux/dataSlicer';
 let PageSize = 2;
 
 function Projects() {
+  const dispatch = useAppDispatch();
+  const load = useAppSelector(state=>state.data.load);
   const { projects } = rawData;
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -22,7 +27,6 @@ function Projects() {
         {
           currentProjects.length > 0 && currentProjects.map((proj: IProject) => <ProjectCard  project={proj} key={proj.name}/>)
         }
-        <div className='pPage-container'>
         {
           projects.length > 0
           ? <Pagination 
@@ -35,7 +39,6 @@ function Projects() {
             />
           : ''
         }
-        </div>
     </div>
   )
 }

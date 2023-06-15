@@ -27,6 +27,7 @@ export default function Navbar() {
           <li className='navbar-li'>
             <Link 
               to='main'
+              activeClass="active"
               spy={true}
               smooth={true}
               offset={-100}

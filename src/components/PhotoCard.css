@@ -6,11 +6,12 @@
 }
 
 .photo-right {
-  border-radius: 5%;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  box-shadow: 0px 0px 10px 1px var(--lightBlue);
 }
 
 @media only screen and (max-width: 769px) {
