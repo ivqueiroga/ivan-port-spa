@@ -1,17 +1,12 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import './Projects.css';
 import ProjectCard from './ProjectCard';
 import Pagination from './Pagination';
 import rawData from '../utils/data';
 import { IProject } from '../Interface/Interface';
-import Loader from './Loader';
-import { useAppSelector, useAppDispatch } from '../redux/hooks/hooks';
-import { setLoading } from '../redux/dataSlicer';
 let PageSize = 2;
 
 function Projects() {
-  const dispatch = useAppDispatch();
-  const load = useAppSelector(state=>state.data.load);
   const { projects } = rawData;
   const [currentPage, setCurrentPage] = useState(1);
 
