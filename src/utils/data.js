@@ -4,12 +4,10 @@ import img1 from '../assets/images/projects/portfolio-spa.png';
 import img2 from '../assets/images/projects/Pokedex_vue.png';
 import img3 from '../assets/videos/JumpMan.webm';
 import img4 from '../assets/images/projects/Pixel-Frame.png';
+import img5 from '../assets/images/projects/CLEP.png';
 
 const data = {
   icons :[
-    {name: 'JS', icon: DiJavascript, text: 'JavaScript é uma linguagem de programação de alto nível, orientada a objetos e baseada em scripts, usada para adicionar interatividade e funcionalidade dinâmica a páginas web.'},
-    {name: 'CSS', icon: DiCss3, text: 'CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a aparência e o layout de elementos em uma página web.'},
-    {name: 'HTML', icon: DiHtml5, text: 'HTML (HyperText Markup Language) é uma linguagem de marcação utilizada para criar páginas web e estruturar o conteúdo da página.'},
     {name: 'ReactJS', icon: DiReact, text: 'ReactJS é uma biblioteca de JavaScript de código aberto, desenvolvida pelo Facebook, que permite a criação de interfaces de usuário eficientes e reativas para aplicações web.'},
     {name: 'Redux', icon: SiRedux, text: 'React Redux é uma biblioteca que fornece uma arquitetura de gerenciamento de estado para aplicações React, permitindo uma manipulação centralizada do estado da aplicação e facilitando a comunicação entre componentes.'},
     {name: 'Git', icon: DiGit, text: 'Git é um sistema de controle de versão distribuído amplamente utilizado no desenvolvimento de software, que permite o rastreamento e gerenciamento eficiente de alterações em arquivos, facilitando o trabalho colaborativo e o controle de histórico de projetos.'},
@@ -28,6 +26,15 @@ const data = {
       languages: ['React','TS'],
       status: 'OK',
       link: {github: 'https://github.com/ivqueiroga/ivan-port-spa', webpage: 'https://ivan-portfolio-spa.vercel.app/', youtube: ''}
+    },
+    {
+      name: 'CLEP',
+      photoPath: {type: 'img', link: img5,},
+      description: 'Jogo feito em React Native utilizando a plataforma Expo',
+      genre: ['App','Game'],
+      languages: ['React Native','Expo'],
+      status: 'OK',
+      link: {github: 'https://github.com/ivqueiroga/Clep', webpage: '', youtube: ''}
     },
     {
       name: 'Pokedex Vue',
