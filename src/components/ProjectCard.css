@@ -2,7 +2,6 @@
   margin-top: 5%;
   display: flex;
   gap: 1%;
-  box-shadow: -2px 2px 10px 1px var(--lightBlue);
   border-radius: 5px;
 }
 
@@ -16,6 +15,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  box-shadow: -2px 2px 10px 1px var(--lightBlue);
 }
 
 .pInfo-container {
