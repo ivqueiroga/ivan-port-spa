@@ -23,6 +23,11 @@
 }
 
 @media only screen and (max-width: 769px) {
+  .projects-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .pPage-container>p {
     margin-left: 3%;
     margin-right: 3%;

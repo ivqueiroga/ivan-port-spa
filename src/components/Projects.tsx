@@ -19,6 +19,7 @@ function Projects() {
   return (
     <div className='projects-container' id='projects'>
       <h2>- Projetos -</h2>
+      <div>
         {
           currentProjects.length > 0 && currentProjects.map((proj: IProject) => <ProjectCard  project={proj} key={proj.name}/>)
         }
@@ -34,6 +35,7 @@ function Projects() {
             />
           : ''
         }
+        </div>
     </div>
   )
 }
