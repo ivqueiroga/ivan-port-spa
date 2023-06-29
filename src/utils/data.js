@@ -31,7 +31,7 @@ const data = {
       name: 'CLEP',
       photoPath: {type: 'img', link: img5,},
       description: 'Jogo feito em React Native utilizando a plataforma Expo',
-      genre: ['App','Game'],
+      genre: ['Game',],
       languages: ['React Native','Expo'],
       status: 'OK',
       link: {github: 'https://github.com/ivqueiroga/Clep', webpage: '', youtube: ''}
