@@ -7,15 +7,16 @@ type Props = {
   isLeft: boolean,
   highlight: boolean,
   link: string,
+  download?: string,
   icon?: JSX.Element,
   thereIsDownload: boolean,
 };
 
-export default function Button({content, highlight, isLeft, link, thereIsDownload, icon}: Props) {
+export default function Button({content, highlight, isLeft, link, download, thereIsDownload, icon}: Props) {
   return (
     <div className={ isLeft? `button-left ${highlight ? 'highlight' : ''}` : `button-right ${highlight ? 'highlight' : ''}` }>
       {thereIsDownload 
-      ? <a href={link} download={'Ivan-CV-Software-Engineer'}>Currículo {icon}</a>
+      ? <a href={link} download={download}>Currículo {icon}</a>
       : <Link spy={true} activeClass="active" smooth={true} duration={500} offset={-200} to={link}>{content}</Link>
       }
     </div>
