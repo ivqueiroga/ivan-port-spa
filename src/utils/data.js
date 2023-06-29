@@ -21,7 +21,7 @@ const data = {
   projects: [{
       name: 'Portfólio SPA',
       photoPath: {type: 'img', link: img1,},
-      description: 'Portfolio SIngle Page Application criado em React com conteúdo responsivo ',
+      description: 'Portfolio Single Page Application criado em React com conteúdo responsivo',
       genre: ['Webpage',],
       languages: ['React','TS'],
       status: 'OK',
