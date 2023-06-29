@@ -83,25 +83,33 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 35%;
+  width: 100%;
   align-items: center;
   
 }
 
 .social-link-container {
-  transform: translateX(20%);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
 }
 
-.social-link-container>label {
+.social-link-container>div {
+  display: block;
+  text-align: left;
+}
+
+.social-text {
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
-  text-align: start;
-  align-content: center;
-  justify-content: center;
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.social-text>a {
+  display: flex;
 }
 
 .social-icon {
