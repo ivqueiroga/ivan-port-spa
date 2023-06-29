@@ -17,7 +17,7 @@ export default function Header() {
       </div>
       <div className='main-btn-container'>
         <Button isLeft={true} link='contacts' content='Contato' highlight={true} thereIsDownload={false}/>
-        <Button isLeft={false} link={cv} download={'Ivan-CV-Software-Engineer'} content='Currículo' highlight={false} thereIsDownload={true} icon={<BiDownload size={15}/>}/>
+        <Button isLeft={false} link={cv} download={'Ivan-CV-Software-Engineer.pdf'} content='Currículo' highlight={false} thereIsDownload={true} icon={<BiDownload size={15}/>}/>
       </div>
     </div>
   )
