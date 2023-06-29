@@ -35,7 +35,7 @@ The content and design of this portfolio website are protected under the [CC BY-
 
 ## Contact
 
-To contact Ivan for any inquiries or questions, you can reach out via:
+To contact Ivan for any inquiries or questions, you can reach out via:<br/>
 **Github**  [/ivqueiroga](https://github.com/ivqueiroga)<br/>
 **LinkedIn**  [in/ivanqueirogap/](https://www.linkedin.com/in/ivanqueirogap/)<br/>
 **Email**  [ivanqueirogap@gmail.com](mailto:ivanqueirogap@gmail.com)<br/>
