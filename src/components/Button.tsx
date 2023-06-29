@@ -15,7 +15,7 @@ export default function Button({content, highlight, isLeft, link, thereIsDownloa
   return (
     <div className={ isLeft? `button-left ${highlight ? 'highlight' : ''}` : `button-right ${highlight ? 'highlight' : ''}` }>
       {thereIsDownload 
-      ? <a href={link} download>{content} {icon}</a>
+      ? <a href={link} download={'Ivan-CV-Software-Engineer'}>Currículo {icon}</a>
       : <Link spy={true} activeClass="active" smooth={true} duration={500} offset={-200} to={link}>{content}</Link>
       }
     </div>

@@ -6,6 +6,7 @@ import { ISkill } from '../Interface/Interface';
 function Skills() {
   const { icons } = rawData;
   const [skillSet, setSkillSet] = useState<any[]>([]);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [activeSkill, setActiveSkill] = useState({
     name: '',
     active: false,

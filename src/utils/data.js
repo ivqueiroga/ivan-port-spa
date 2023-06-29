@@ -1,4 +1,4 @@
-import {DiJavascript, DiCss3, DiHtml5, DiReact, DiGit, DiGithubBadge, DiLinux} from 'react-icons/di';
+import { DiReact, DiGit, DiGithubBadge, DiLinux} from 'react-icons/di';
 import {SiAdobephotoshop, SiAdobepremierepro, SiBlender, SiRedux} from 'react-icons/si'
 import img1 from '../assets/images/projects/portfolio-spa.png';
 import img2 from '../assets/images/projects/Pokedex_vue.png';
@@ -30,11 +30,11 @@ const data = {
     {
       name: 'CLEP',
       photoPath: {type: 'img', link: img5,},
-      description: 'Jogo feito em React Native utilizando a plataforma Expo',
-      genre: ['Game',],
+      description: 'Aplicação feita em React Native utilizando a plataforma Expo para aprimorar a jogabilidade do jogo conceito homônimo',
+      genre: ['GameApp',],
       languages: ['React Native','Expo'],
       status: 'OK',
-      link: {github: 'https://github.com/ivqueiroga/Clep', webpage: '', youtube: ''}
+      link: {github: 'https://github.com/ivqueiroga/Clep', webpage: '', youtube: 'https://youtube.com/shorts/FqLGLxJFKU0?feature=share'}
     },
     {
       name: 'Pokedex Vue',
