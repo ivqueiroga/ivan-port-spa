@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import './Header.css';
 import Button from './Button';
 import { BiDownload } from 'react-icons/bi';
+import cv from '../assets/docs/Ivan-CV-Software-Engineer.pdf';
 
 export default function Header() {
   return (
@@ -16,7 +17,7 @@ export default function Header() {
       </div>
       <div className='main-btn-container'>
         <Button isLeft={true} link='contacts' content='Contato' highlight={true} thereIsDownload={false}/>
-        <Button isLeft={false} link={'../assets/docs/Ivan-CV-Software-Engineer.pdf'} download={'Ivan-CV-Software-Engineer'} content='Currículo' highlight={false} thereIsDownload={true} icon={<BiDownload size={15}/>}/>
+        <Button isLeft={false} link={cv} download={'Ivan-CV-Software-Engineer'} content='Currículo' highlight={false} thereIsDownload={true} icon={<BiDownload size={15}/>}/>
       </div>
     </div>
   )
