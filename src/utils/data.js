@@ -1,4 +1,4 @@
-import { DiReact, DiGit, DiGithubBadge, DiLinux} from 'react-icons/di';
+import { DiReact, DiGit, DiGithubBadge, DiLinux, DiPython } from 'react-icons/di';
 import {SiAdobephotoshop, SiAdobepremierepro, SiBlender, SiRedux} from 'react-icons/si'
 import img1 from '../assets/images/projects/portfolio-spa.png';
 import img2 from '../assets/images/projects/Pokedex_vue.png';
@@ -8,6 +8,7 @@ import img5 from '../assets/images/projects/CLEP.png';
 
 const data = {
   icons :[
+    {name: 'Python', icon: DiPython, text: 'Python é uma linguagem de programação de alto nível, interpretada, dinâmica e de fácil leitura, com foco em simplicidade e produtividade.'},
     {name: 'ReactJS', icon: DiReact, text: 'ReactJS é uma biblioteca de JavaScript de código aberto, desenvolvida pelo Facebook, que permite a criação de interfaces de usuário eficientes e reativas para aplicações web.'},
     {name: 'Redux', icon: SiRedux, text: 'React Redux é uma biblioteca que fornece uma arquitetura de gerenciamento de estado para aplicações React, permitindo uma manipulação centralizada do estado da aplicação e facilitando a comunicação entre componentes.'},
     {name: 'Git', icon: DiGit, text: 'Git é um sistema de controle de versão distribuído amplamente utilizado no desenvolvimento de software, que permite o rastreamento e gerenciamento eficiente de alterações em arquivos, facilitando o trabalho colaborativo e o controle de histórico de projetos.'},
